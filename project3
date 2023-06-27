@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Meu Painel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        .sidebar {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="p-3 bg-dark border-bottom">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <h3 class="text-white">Meu Painel</h3>
+                </div>
+                <div class="col-6 d-flex justify-content-end align-items-center">
+                    <div class="me-3">
+                        <input type="search" class="form-control bg-white text-dark" placeholder="Buscar" name="campoBuscar">
+                    </div>
+                    <div class="dropdown">
+                        <a class="dropdown-toggle text-white" href="#" role="button" id="profileDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Olá João
+                        </a>
+    
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                            <li><a class="dropdown-item" href="#">Configurações</a></li>
+                            <li><a class="dropdown-item" href="#">Mensagens</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Sair</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 col-lg-2 d-md-block bg-light sidebar vh-100">
+                <div class="position-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-home me-2"></i>
+                                    Painel
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <div class="d-flex align-items-center">
+                                    <i class="far fa-file-alt me-2"></i>
+                                    Ordens
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-box me-2"></i>
+                                    Produtos
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-users me-2"></i>
+                                    Clientes
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-chart-bar me-2"></i>
+                                    Relatórios
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="col-md-10 col-lg-10 ms-sm-auto">
+                <div class="container-fluid">
+                    <div class="row mt-2">
+                        <div class="col-12">
+                            <h2>Painel</h2>
+                            <p>Essa é a página inicial de um painel administrativo.</p>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="card-header fw-bold">Clientes</div>
+                                <div class="card-body">
+                                    <h4 class="fw-bold font-size-padrao">345 mil</h4>
+                                    <p class="font-size-medio">Abril/2023 - Junho2023, Brasília-DF</p>
+                                    <h6 class="font-size-pequeno text-success">18,2% de aumento no período</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="card-header fw-bold">Receita</div>
+                                <div class="card-body">
+                                    <h4 class="fw-bold font-size-padrao">R$ 2,4 milhões</h4>
+                                    <p class="font-size-medio">Abril/2023 - Junho2023, Brasília-DF</p>
+                                    <h6 class="font-size-pequeno text-success">4% de aumento no período</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="card-header fw-bold">Compras</div>
+                                <div class="card-body">
+                                    <h4 class="fw-bold font-size-padrao">42 unidades</h4>
+                                    <p class="font-size-medio">Abril/2023 - Junho2023, Brasília-DF</p>
+                                    <h6 class="font-size-pequeno text-danger">2,6% de decréscimo no período</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="card-header fw-bold">Tráfego</div>
+                                <div class="card-body">
+                                    <h4 class="fw-bold font-size-padrao">64 mil mil</h4>
+                                    <p class="font-size-medio">Abril/2023 - Junho2023, Brasília-DF</p>
+                                    <h6 class="font-size-pequeno text-success">2,5% de aumento no período</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <div class="card">
+                                <div class="card-header fw-bold">Tráfego últimos 6 meses</div>
+                                <div class="card-body">
+                                    <canvas id="myChart" width="400" height="300"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card">
+                                <div class="card-header fw-bold">Tráfego</div>
+                                <div class="card-body">
+                                    <table class="table">
+                                        <thead class="border-bottom border-black">
+                                            <tr>
+                                                <th scope="col">Ordem</th>
+                                                <th scope="col">Produto</th>
+                                                <th scope="col">Cliente</th>
+                                                <th scope="col">Total</th>
+                                                <th scope="col">Data</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="font-size-medio align-middle" scope="row">17371705</th>
+                                                <td class="font-size-medio align-middle">Produto 1</td>
+                                                <td class="font-size-medio align-middle">maria@email.com</td>
+                                                <td class="font-size-medio align-middle">R$ 61,11</td>
+                                                <td class="font-size-medio align-middle">20/06/2023</td>
+                                                <td><button class="btn btn-primary bg-primary text-white">Detalhar</button></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="font-size-medio align-middle" scope="row">17370540</th>
+                                                <td class="font-size-medio align-middle">Produto 2</td>
+                                                <td class="font-size-medio align-middle">jose@email.com</td>
+                                                <td class="font-size-medio align-middle">R$ 53,11</td>
+                                                <td class="font-size-medio align-middle">20/06/2023</td>
+                                                <td><button class="btn btn-primary bg-primary text-white">Detalhar</button></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="font-size-medio align-middle" scope="row">17371705</th>
+                                                <td class="font-size-medio align-middle">Produto 3</td>
+                                                <td class="font-size-medio align-middle">maria@email.com</td>
+                                                <td class="font-size-medio align-middle">R$ 61,11</td>
+                                                <td class="font-size-medio align-middle">20/06/2023</td>
+                                                <td><button class="btn btn-primary bg-primary text-white">Detalhar</button></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="font-size-medio align-middle" scope="row">17371705</th>
+                                                <td class="font-size-medio align-middle">Produto 4</td>
+                                                <td class="font-size-medio align-middle">jose@email.com</td>
+                                                <td class="font-size-medio align-middle">R$ 53,11</td>
+                                                <td class="font-size-medio align-middle">20/06/2023</td>
+                                                <td><button class="btn btn-primary bg-primary text-white">Detalhar</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn bg-cinza-escuro w-100 fw-bold">Todas as transações</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1"></script>
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
+            datasets: [{
+                label: 'Tráfego no Site',
+                data: [20000, 25000, 20000, 35000, 55000, 65000],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
+                    
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <p class="text-center text-muted">Desenvolvido em - 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
